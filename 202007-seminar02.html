@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache"> 
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+        <title></title>
+        <link rel="stylesheet" href="./L_Common/Template/Css/reset.css">
+        <link rel="stylesheet" href="./L_Common/Template/Css/common.css">
+        <link rel="stylesheet" href="./L_Common/Template/Css/202007-seminar.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			function agreeCheck(e) {
+				var btn = document.querySelector("#apply");
+				if (e.checked == true) {
+					btn.disabled = false;
+					btn.animate([
+						{ opacity: '0.3' },
+						{ opacity: '1' }
+					], 200)
+					btn.style.opacity = "1";
+				} else {
+					btn.disabled = true;
+					btn.animate([
+						{ opacity: '1' },
+						{ opacity: '0.3' }
+					], 200)
+					btn.style.opacity = "0.3";
+				}
+			}
+			
+			function slideUpDown(e){
+				const parent = e.parentElement;
+				const details = parent.querySelector("#privacy-policy");
+				const state = details.style.display;
+				if(state == 'none'){
+					$(details).slideDown();
+				}else{
+					$(details).slideUp();
+				}
+			}
+			
+			function apply(){
+				var name = document.querySelector("#name");
+				var email = document.querySelector("#email");
+				var phoneOne = document.querySelector("#phone-one");
+				var phoneTwo = document.querySelector("#phone-two");
+				var belong = document.querySelector("#belong");
+				
+				var nameMsg = document.querySelector("#name-msg");
+				var emailMsgOne = document.querySelector("#email-msg-one");
+				var emailMsgTwo = document.querySelector("#email-msg-two");
+				var phoneMsg = document.querySelector("#phone-msg");
+				var belongMsg = document.querySelector("#belong-msg");
+
+				var result = new Array();
+
+				if(name.value == null || name.value == ""){
+					nameMsg.style.display = "block";
+					result.push(false);
+				} else{
+					nameMsg.style.display = "none";
+					result.push(true);
+				}
+
+				if(email.value == null || email.value == ""){
+					emailMsgOne.style.display = "block";
+					emailMsgTwo.style.display = "none";
+					result.push(false);
+				}else{
+					const parttern = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+					if(!parttern.test(email.value)){
+						emailMsgOne.style.display = "none";
+						emailMsgTwo.style.display = "block";
+						result.push(false);
+					}else{
+						emailMsgOne.style.display = "none";
+						emailMsgTwo.style.display = "none";
+						result.push(true);
+					}
+				}
+
+				if(phoneOne.value == null || phoneOne.value == "" || phoneTwo.value == null || phoneTwo.value == ""){
+					phoneMsg.style.display = "block";
+					result.push(false);
+				}else{
+					const parttern = /^[0-9]{4}$/;
+					if(!parttern.test(phoneOne.value) || !parttern.test(phoneTwo.value)){
+						phoneMsg.style.display = "block";
+						result.push(false);
+					}else{
+						phoneMsg.style.display = "none";
+						result.push(true);
+					}
+				}
+
+				if(belong.value == null || belong.value == ""){
+					belongMsg.style.display = "block";
+					result.push(false);
+				}else{
+					belongMsg.style.display = "none";
+					result.push(true);
+				}
+				
+				var r = false;
+
+				for (let i = 0; i < result.length; i++) {
+					r = result[i];
+					if (!r) return false;
+				}
+
+
+				if (!r) {
+					return false;
+				} else {
+					alert("신청이 완료되었습니다.");
+					window.location = "./202007-seminar.html";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="theme-tit">
+				<img src="./img/202007-seminar-img01.png" alt="" class="desktop">
+				<img src="./img/202007-seminar-img02.png" alt="" class="mobile">
+			</div>
+		</div>
+		<div id="contents">
+			<div class="con-wrap">
+				<div class="desc-txt">
+					<h3>어세스타와 떠나는 여름 자기발견 여행</h3>
+					<p>상반기가 끝나가는데 코로나로 정신없이 보냈더니, 아직 뭐 하나 제대로 한 게 없는 것 저뿐인가요. 올해의 여름휴가는 부산 또는 제주도라는 말을 많이 합니다. 물론 집콕을 선택하는 분들도 계시겠죠. 이럴 때 드라마 정주행 말고, <span class="underline">어세스타와 함께 MBTI를 활용한 자기 발견 여행을 떠나보는 건 어떠신가요.</span></p>
+					<p>- <span class="point">'MBTI 팩트체크'</span>에서는 자기발견의 기초인 MBTI를 자세히 알 수 있습니다.<br>- <span class="point">'슬기로운 가족생활'</span>에서는 자신과 아이의 궁합을 MBTI 유형 정보를 통해 확인할 수 있습니다.</p>
+					<p>어세스타는 선택하신 목적지로 안전하게 모시겠습니다. 승강장과 승차일시를 꼭 확인해주세요 👀</p>
+				</div>
+				<div class="ticketing-wrap">
+					<div class="ticketing-box point">
+						<div class="boardingpass">BOARDING PASS</div>
+						<div class="ticketing-tit">ARQ를 활용하여 진로장벽 점검하기</div>
+						<div class="ticketing-desc">
+							<ul>
+								<li>
+									<div>승객정보</div>
+									<div class="info">온라인 심리검사를 활용하고자 하는 선생님</div>
+								</li>
+								<li>
+									<div>승차일시</div>
+									<div class="info">2020년 7월 2일(목) 15:30 ~ 16:30</div>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<div>승강장</div>
+									<div class="info">온라인 세미나(Zoom)</div>
+								</li>
+								<li>
+									<div>운임요금</div>
+									<div class="info">무료</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ticketing-box">
+						<div class="boardingpass">BOARDING PASS</div>
+						<div class="ticketing-tit">ARQ를 활용하여 진로장벽 점검하기</div>
+						<div class="ticketing-desc">
+							<ul>
+								<li>
+									<div>승객정보</div>
+									<div class="info">온라인 심리검사를 활용하고자 하는 선생님</div>
+								</li>
+								<li>
+									<div>승차일시</div>
+									<div class="info">2020년 7월 2일(목) 15:30 ~ 16:30</div>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<div>승강장</div>
+									<div class="info">온라인 세미나(Zoom)</div>
+								</li>
+								<li>
+									<div>운임요금</div>
+									<div class="info">무료</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="personal-desc">
+					<h3>신청자 정보</h3>
+					<div>
+						<div class="personal-box">
+							<ul>
+								<li>이름<span id="name-msg" style="display: none;">* 이름을 입력해주세요.</span></li>
+								<li><input type="text" id="name"></li>
+								<li>이메일
+									<span id="email-msg-one" style="display: none;">* 이메일을 입력해주세요.</span>
+									<span id="email-msg-two" style="display: none;">* 이메일 형식이 맞지 않습니다.</span>
+								</li>
+								<li><input type="email" id="email"></li>
+							</ul>
+							</div>
+						<div class="personal-box">
+							<ul>
+								<li>전화번호<span id="phone-msg" style="display: none;">* 전화번호를 입력해주세요.</span></li>
+								<li class="phone">
+									<select>
+										<option>010</option>
+										<option>011</option>
+										<option>016</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+										<option>070</option>
+									</select>
+									<input type="text" id="phone-one" maxlength="4">
+									<input type="text" id="phone-two" maxlength="4">
+								</li>
+								<li>소속(하시는 일)<span id="belong-msg" style="display: none;">* 소속(하시는 일)을 입력해주세요.</span></li>
+								<li><input type="text" id="belong"></li>
+							</ul>
+						</div>					
+					</div>
+					<div class="agree-check">
+						<input type="checkbox" class="agree-check-input" id="agree" onclick="agreeCheck(this)">
+						<label for="agree" class="agree-check-label">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24px" height="24px" viewBox="0 0 24 24">
+								<circle cx="12" cy="12" r="11" stroke="#0087ff" stroke-width="1" fill="#fff" />
+								<polyline points="6 12 10 16 18 8" />
+							</svg>
+							<span><span>[필수]</span> 개인정보 처리방침 및 이용 약관에 동의합니다.</span>
+						</label>
+						<span class="agree-detail" onClick="slideUpDown(this)">(자세히보기)</span>
+						<div id="privacy-policy" class="privacy-policy" style="display: none;">
+							<h2>수집하는 개인정보의 항목</h2>
+							<p>회사는 세미나 등록, 뉴스레터 발송, 현장에서 본인확인 등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+							<ul>
+								<li>- <strong>수집항목</strong> : ① 필수사항 : 이름, 휴대폰, 이메일 주소, 소속(하시는 일)</li>
+								<li>- <strong>개인정보 수집방법</strong> : 홈페이지(세미나 신청)</li>
+							</ul>
+							<h2>개인정보의 수집 및 이용목적</h2>
+							<p>각 수집정보 별 수집목적은 다음과 같습니다.</p>
+							<ul>
+								<li>- <strong>모든 항목 기본 사항</strong> : 세미나, 교육과정 신청에 대한 본인확인</li>
+								<li>- <strong>이메일주소</strong> : 새로운 상품, 서비스 정보 등 최신 정보 안내</li>
+							</ul>
+							<h2>개인정보의 보유 및 이용 기간</h2>
+							<p>개인정보는 수집 및 이용 동의일로부터 목적을 달성할 때까지 이용하며, 이용목적이 달성된 후에는 지체 없이 재사용할 수 없는 형태로 파기합니다. 본 동의는 언제든지 철회할 수 있으며, 개인정보의 이용과 관련하여 고객님께 불편을 드린 경우 언제라도 연락 주시면 신속하게 조치하겠으며 정보 보호에 최선의 노력을 다할 것을 약속드립니다.</p>
+						</div>
+					</div>
+					<div class="btn-book">
+						<input type="button" value="예매하기" id="apply" onClick="apply()" disabled="disabled">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer-wrap">
+				<div class="com-info">
+					<img src="./img/logo-img01.png" alt="">
+					<p>
+						서울시 영등포구 국회대로68길 11, 삼보호정빌딩 5층<br>
+						<strong>TEL</strong> (02)787-1400 (평일 09:00 ~ 18:00)<br>
+						<strong>FAX</strong> (02)787-1408<br>
+						<strong>MAIL</strong> assesta@assesta.com
+					</p>
+				</div>
+				<div class="com-fam">
+					<ul class="sns">
+						<li><a href="https://www.instagram.com/assesta_official/?hl=ko" target="_blank"><img src="./img/sns-icon02.png" alt=""></a></li>
+						<li><a href="https://www.facebook.com/assesta.official/" target="_blank"><img src="./img/sns-icon03.png" alt=""></a></li>
+						<li><a href="https://www.youtube.com/channel/UCYo7sTZXjfZXpHKTqIuiO6A" target="_blank"><img src="./img/sns-icon01.png" alt=""></a></li>
+					</ul>
+					<div class="site">
+						<div onClick="SiteOn(this)">FAMILY SITE</div>
+						<ul id="family" style="display: none;">
+							<li onClick="window.open('http://www.assesta.com/main/main.asp')">어세스타</li>
+							<li onClick="window.open('http://www.career4u.net/Main/Main.asp')">어세스타 온라인 심리검사 센터</li>
+							<li onClick="window.open('http://school.assesta.com/?utm_source=assesta&utm_campaign=main_schoolup_main&utm_medium=banner')">어세스타 스쿨</li>
+						</ul>
+					</div>
+				</div>
+				<p>ⓒ ASSESTA Inc, All rights reserved.</p>
+			</div>
+		</div>
+	</body>
+</html>

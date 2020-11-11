@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Wide-Desktop width 1280px padding 80px, 1120px ~ */
+#contents {width: 100%; background: url(http://img.assesta.com/seminar/theme-bg-img01.png); cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), auto; box-sizing: border-box;}
+.con-wrap {max-width: 1280px; width: 100%; margin: 0 auto; padding: 36px 80px;}
+.con-wrap .banner {width: 100%; margin-bottom: 24px; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;}
+.con-wrap .banner > img.desktop {width: 100%; display: block;}
+.con-wrap .banner > img.mobile {width: 100%; display: none;}
+.con-wrap .banner:active {cursor: url('http://img.assesta.com/seminar/cursor-img02.png'), pointer;}
+
+.con-desc {margin-bottom: 24px;}
+.con-desc > p {font-size: 16px; font-weight: 500; line-height: 160%;}
+.con-desc > p > span {text-decoration: underline; font-weight: 800;}
+
+.con-desc > p > strong {color: #0087ff; font-weight: 700;}
+.con-desc > div {font-size: 16px; font-weight: 700; color: #0087ff; text-decoration: underline; float: right; position: relative; top: -21px; height: 0; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;}
+.con-desc > div:active {cursor: url('http://img.assesta.com/seminar/cursor-img02.png'), pointer;}
+
+.ticket-wrap .ticket-con {clear: both; display: inline-block; width: 32.5%; margin: 0 0.29%;  vertical-align: top;}
+.ticket-wrap .ticket-con .ticket-input {display: none; position: absolute; z-index: -1; width: 0; height: 0; opacity: 0;}
+.ticket-wrap .ticket-con .ticket-label {cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box {text-align: center; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;
+background: url(http://img.assesta.com/seminar/ticket-bg-line01.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-line01.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-img05.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 36px;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box.point {text-align: center; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;
+background: url(http://img.assesta.com/seminar/ticket-bg-line01.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-line01.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-img06.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 36px;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box:active {cursor: url('http://img.assesta.com/seminar/cursor-img02.png'), pointer;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box.point .boardingpass {font-size: 12px; font-weight: 700; color: #fff; text-align: center; padding-top: 20px; height: 43px;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box .boardingpass {font-size: 12px; font-weight: 700; color: #222; text-align: center; padding-top: 20px; height: 43px;}
+/*.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-sub {background: #fff;}*/
+.ticket-wrap .ticket-con .ticket-label .ticket-box > hr {clear: both; border: 1px dashed #ccc;; height: 0; line-height: 0; margin: 0;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-tit {font-size: 18px; font-weight: 700; color: #222; text-align: center; padding: 22px 0 20px; line-height: 130%;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc {text-align: left; width: 90%; padding-bottom: 6px; margin: 20px auto 0;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .ticket-cat {font-size: 13px; font-weight: 500; color: #666; margin-bottom: 4px;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .ticket-info {font-size: 16px; font-weight: 500; color: #222; line-height: 130%; margin-bottom: 16px;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .half {display: inline-block; width: 49%; vertical-align: top; letter-spacing: -0.02em;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .third {display: inline-block; width: 32%; vertical-align: top;}
+.ticket-wrap .ticket-con .ticket-input:checked ~ .ticket-label .ticket-box {background: url(http://img.assesta.com/seminar/ticket-bg-line02.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-line02.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-img07.png) repeat-x; background-position: right, left, left top; background-size: 3px, 3px, auto; border-bottom: 3px solid #0087ff; margin-bottom: 34px;}
+.ticket-wrap .ticket-con .ticket-input:checked ~ .ticket-label .ticket-box.point {background: url(http://img.assesta.com/seminar/ticket-bg-line02.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-line02.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-img08.png) repeat-x; background-position: right, left, left top; background-size: 3px, 3px, auto; border-bottom: 3px solid #0087ff; margin-bottom: 34px;}
+/*.ticket-wrap .ticket-con .ticket-input:checked ~ .ticket-label .ticket-box .ticket-sub {background: #fffadb;}*/
+
+.desc-txt {padding-bottom: 16px;}
+.desc-txt > h3 {font-size: 24px; font-weight: 600; margin-bottom: 16px; line-height: 160%;}
+.desc-txt > p {font-size: 16px; font-weight: 400; line-height: 160%; margin-bottom: 16px;}
+.desc-txt > ul {list-style: disc; padding-left: 20px; margin-bottom: 16px;}
+.desc-txt > ul > li {font-size: 16px; font-weight: 400; line-height: 210%;}
+.desc-txt > ol {list-style: none; margin-bottom: 16px;}
+.desc-txt > ol > li {font-size: 17px; font-weight: 600; line-height: 210%;}
+.desc-txt > ol > li:nth-of-type(2n) {font-size: 16px; font-weight: 400; line-height: 160%; padding-bottom: 10px;}
+.desc-txt > ol > li:last-child {padding-bottom: 0;}
+
+.step {margin-bottom: 24px;}
+.step > p {font-size: 18px; font-weight: 400; margin-bottom: 16px; line-height: 160%;}
+.step > p > span {font-size: 24px; font-weight: 600; margin-bottom: 16px; line-height: 160%; color: #0087ff;}
+.step > ul > li {display: inline-block; margin-right: 15px;}
+
+.ticketing-box {width: 100%; text-align: center; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;
+background: url(http://img.assesta.com/seminar/ticket-bg-line01.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-line01.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-img05.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 16px; padding: 0 30px;}
+.ticketing-box.point {width: 100%; text-align: center; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;
+background: url(http://img.assesta.com/seminar/ticket-bg-line01.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-line01.png) repeat-y, url(http://img.assesta.com/seminar/ticket-bg-img06.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 16px; padding: 0 30px;}
+.ticketing-box .boardingpass {font-size: 12px; font-weight: 700; color: #222; text-align: center; padding-top: 20px; height: 43px;}
+.ticketing-box.point .boardingpass {font-size: 12px; font-weight: 700; color: #fff; text-align: center; padding-top: 20px; height: 43px;}
+.ticketing-box .ticketing-tit {font-size: 16px; font-weight: 700; color: #222; text-align: left; padding: 22px 0 20px;}
+.ticketing-box .ticketing-desc > ul {text-align: left;}
+.ticketing-box .ticketing-desc > ul > li {display: inline-block; width: 49%; text-align: left;}
+.ticketing-box .ticketing-desc > ul > li > div {font-size: 13px; font-weight: 500; color: #666; margin-bottom: 4px;}
+.ticketing-box .ticketing-desc > ul > li > div.info {font-size: 14px; font-weight: 500; color: #222; line-height: 130%; margin-bottom: 16px;}
+
+.personal-desc {padding-top: 24px;}
+.personal-desc > h3 {font-size: 24px; font-weight: 600; margin-bottom: 24px;}
+
+.personal-box {width: 49%; float: left;}
+.personal-box:last-child {float: right;}
+.personal-box > ul > li {font-size: 16px; font-weight: 400; margin-bottom: 8px; clear: both;}
+.personal-box > ul > li > span {float: right; font-size: 14px; position: relative; top: 2px; color: #ff5455;}
+.personal-box > ul > li > input {width: 100%; height: 48px; margin-bottom: 8px; padding: 0 10px; border: 1px solid #ccc; border-radius: 0; font-size: 14px;}
+.personal-box > ul > li > input[type="radio"] {display: none;}
+.personal-box > ul > li .rel {display: inline-block; width: 48.3%; height: 48px; margin-bottom: 8px; border: 1px solid #ccc; border-radius: 0; font-size: 16px; margin-right: 2%; line-height: 48px; text-align: center; background: #fff; color: #ccc;}
+.personal-box > ul > li .rel:last-child {margin-right: 0;}
+.personal-box > ul > li input[type="radio"]:checked + .rel {border: 1px solid #0087ff; color: #0087ff; font-weight: 600;}
+.personal-box > ul > li.phone > select {display: inline-block; width: 32%; height: 48px; margin-bottom: 8px; padding: 0 0 0 10px; border: 1px solid #ccc; border-radius: 0; font-size: 14px;}
+.personal-box > ul > li.phone > input {display: inline-block; width: 32%; height: 48px; margin-bottom: 8px; margin-left: 1%; border: 1px solid #ccc; border-radius: 0;}
+.personal-box > ul > li.phone > input:last-child {float: right; margin-left: 0;}
+
+.agree-check {clear: both; margin-bottom: 16px;}
+.agree-check-input {position: absolute; z-index: -1; width: 0; height: 0; opacity: 0;}
+.agree-check-label {user-select: none; margin-bottom: 0; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer; vertical-align: middle;}
+.agree-check-label > svg {margin-right: 8px;}
+.agree-check-label > svg > polyline {fill: none; stroke: #fff; stroke-width: 2px; stroke-miterlimit: 10; stroke-dashoffset: 0; stroke-dasharray: 30;}
+.agree-check-input:checked ~  .agree-check-label > svg > polyline {stroke: #fff; animation: dash 0.5s linear alternate 1;}
+@keyframes dash {from {stroke-dashoffset: 30;} to{stroke-dashoffset: 0;}}
+.agree-check-input:checked ~  .agree-check-label > svg > circle {fill: #0087ff; stroke: none; animation: on 0.3s;}
+@keyframes on {from {r: 0; opacity: 0;} to{r: 11; opacity: 1;}}
+.agree-check-label > span {position: relative; top: -7px; line-height: 160%;}
+.agree-check-label > span > span {color: #0087ff; font-weight: 600;}
+
+.dead {text-decoration: line-through; text-decoration-style: 1px solid #f03e3e;}
+
+.agree-detail {text-decoration: underline; font-size: 14px; position: relative; top: -3px;}
+.privacy-policy {width: 100%; max-height: 120px; overflow-y: auto;  border: 1px solid #ccc; margin-top: 8px; padding: 8px 16px; font-size: 14px; line-height: 160%; background: #fff;}
+.privacy-policy > h2 {font-size: 16px; font-weight: 600; line-height: 160%;}
+.privacy-policy > p {font-size: 14px; font-weight: 400; line-height: 160%;}
+.privacy-policy > ul {margin-bottom: 10px;}
+.privacy-policy > ul > li {font-size: 14px; font-weight: 400; line-height: 160%;}
+
+.agree-check .guiding {font-size: 14px; font-weight: 300; line-height: 210%;}
+
+.btn-book {clear: both;}
+.btn-book > input[type="button"] {-webkit-appearance:none; width: 100%; height: 56px; background: #0087ff; font-size: 16px; font-weight: 600; color: #fff; border: 0; letter-spacing: 5px; transition: 0.3s;}
+.btn-book > input[type="button"]:disabled {-webkit-appearance:none; width: 100%; height: 56px; background: #ccc; font-size: 16px; font-weight: 600; color: #fff; border: 0; letter-spacing: 5px; transition: 0.3s;}
+
+/* Desktop width 720px ~ 1280px */
+@media (max-width: 1280px) {
+	.con-wrap {max-width: 1280px; width: 100%; margin: 0 auto; padding: 36px 6%;}
+	
+	.ticket-wrap .ticket-con {width: 47%; margin: 0 1%; vertical-align: top;}
+	.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-tit {font-size: 16px;}
+	}
+
+/* Tablet width 360px ~ 720px */
+@media (max-width: 720px) {
+	.con-wrap .banner > img.desktop {width: 100%; display: none;}
+	.con-wrap .banner > img.mobile {width: 100%; display: block;}
+
+	.con-desc {margin-bottom: 8px;}
+	.con-desc > div {float: none; position: static; text-align: right; margin-bottom: 40px;}
+	
+	.ticket-wrap .ticket-con {display: block; width: 100%; margin: 0;}
+	.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-tit {font-size: 20px;}
+	.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .half {display: inline-block; width: 26%; vertical-align: top;}
+	.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .third {display: inline-block; width: 14%; vertical-align: top;}
+	
+	.personal-box {width: 100%;}
+	.agree-detail {position: relative; top: -7px;}
+}
+
+
+
+
+
+
+

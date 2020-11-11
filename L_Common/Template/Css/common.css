@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {font-family: 'Montserrat', 'Noto Sans cjk kr', 'Noto Sans', 'Noto Sans KR', 'Noto Sans JP', 'Nanum Gothic', 'Nanum Gothic Coding', sans-serif; box-sizing: border-box;}
+html, body {width: 100%; height: 100%; font-family: 'Montserrat', 'Noto Sans cjk kr', 'Noto Sans', 'Noto Sans KR', 'Noto Sans JP', 'Nanum Gothic', 'Nanum Gothic Coding', sans-serif; box-sizing: border-box; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), auto; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; -webkit-touch-callout: none; user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; -webkit-user-drag: none;}
+html:active, body:active, input:active, select:active, label:active, input:checked, a:active, #contents:active {cursor: url('http://img.assesta.com/seminar/cursor-img02.png'), auto;}
+a, a:hover {cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), auto; color: #222;}
+
+/* scroll */
+/* ie */
+html {scrollbar-arrow-color: #efefef; scrollbar-Track-Color: #efefef; scrollbar-base-color: #dfdfdf; scrollbar-Face-Color: #dfdfdf; scrollbar-3dLight-Color: #dfdfdf; scrollbar-DarkShadow-Color: #dfdfdf; scrollbar-Highlight-Color: #dfdfdf; scrollbar-Shadow-Color: #dfdfdf}
+/* chrome, safari */
+::-webkit-scrollbar {width: 15px; height: 15px;}
+::-webkit-scrollbar-track {background: rgba(0,0,0,.05);}
+::-webkit-scrollbar-thumb {background: #ccc;}
+
+/* common */
+strong {font-weight: 600;}
+
+.point {color: #0087ff; font-weight: 600;}
+.underline {text-decoration: underline; color: #222;}
+
+input, select {cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;}
+
+/* font color */
+.yellow {color: #fadf45;}
+.red {color: #f03e3e!important; text-decoration: none!important;}
+
+/* Wide-Desktop width 1280px padding 80px, 1120px ~ */
+#header {width: 100%; background: #f5f6f7;}
+.theme-tit {max-width: 1280px; width: 100%; padding: 80px; margin: 0 auto; text-align: center;}
+.theme-tit > img.desktop {display: block; margin: 0 auto; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; -webkit-touch-callout: none; user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; -webkit-user-drag: none;}
+.theme-tit > img.mobile {display: none; margin: 0 auto; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; -webkit-touch-callout: none; user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; -webkit-user-drag: none;}
+
+#footer {clear: both; width: 100%; background: #333;}
+.footer-wrap {max-width: 1280px; width: 100%; margin: 0 auto; min-height: 240px; padding: 40px 80px; color: #fff; font-size: 14px; font-weight: 300; line-height: 180%;}
+.footer-wrap img {-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; -webkit-touch-callout: none; user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; -webkit-user-drag: none;}
+.footer-wrap .com-info {float: left;}
+.footer-wrap .com-info > p {margin-top: 16px;}
+.footer-wrap .com-info > p > strong {font-weight: 700;}
+.footer-wrap .com-fam {float: right;}
+.footer-wrap .com-fam .sns {text-align: right; margin-bottom: 8px;}
+.footer-wrap .com-fam .sns > li {display: inline-block; margin: 0 8px; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;}
+.footer-wrap .com-fam .sns > li > a {cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;}
+.footer-wrap .com-fam .site > div {text-align: left; font-size: 14px; width: 216px; padding: 6px 16px; background: #4d4d4d url(http://img.assesta.com/seminar/dropdowns01.png) no-repeat; background-position: 190px; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;}
+.footer-wrap .com-fam .site > div:active {cursor: url('http://img.assesta.com/seminar/cursor-img02.png'), pointer;}
+.footer-wrap .com-fam .site #family {background: #444; position: relative; top: -164px; height: 0;}
+.footer-wrap .com-fam .site #family > li {background: #444; border-bottom: 1px solid #333; padding: 8px 16px; color: #fff; font-size: 13px; font-weight: 300; text-decoration: none; cursor: url('http://img.assesta.com/seminar/cursor-img01.png'), pointer;}
+.footer-wrap > p {clear: both; float: right; vertical-align: bottom; font-size: 14px;}
+
+/* Desktop width 720px ~ 1280px */
+@media (max-width: 1280px) {
+	.theme-tit {padding: 5% 0 3%;}
+    .theme-tit > img.desktop {width: 90%;}
+    
+}
+
+/* Tablet width 360px ~ 720px */
+@media (max-width: 720px) {
+    .theme-tit > img.desktop {display: none;}
+    .theme-tit > img.mobile {display: block; width: 90%;}
+
+    #footer {width: 100%; background: #333;}
+	.footer-wrap {min-height: 240px; padding: 24px; text-align: center;}
+	.footer-wrap .com-info {float: none;}
+	.footer-wrap .com-info > p {margin: 8px 0 16px}
+	.footer-wrap .com-fam {clear: both; float: none;}
+	.footer-wrap .com-fam .sns {text-align: center;}
+	.footer-wrap .com-fam .sns > li {display: inline-block; margin: 0 8px;}
+	.footer-wrap .com-fam .site > div {margin: 0 auto;}
+	.footer-wrap .com-fam .site #family {width: 216px; text-align: left; margin: 0 auto;}
+	.footer-wrap > p {float: none; margin-top: 16px;}
+}
+
+
+
+
+
+
+
