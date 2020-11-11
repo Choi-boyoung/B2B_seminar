@@ -3,29 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /* Wide-Desktop width 1280px padding 80px, 1120px ~ */
-#contents {width: 100%; background: url(./img/theme-bg-img01.png); cursor: url('./img/cursor-img01.png'), auto; box-sizing: border-box;}
+#contents {width: 100%; background: url(../../../img/theme-bg-img01.png); cursor: url('../../../img/cursor-img01.png'), auto; box-sizing: border-box;}
 .con-wrap {max-width: 1280px; width: 100%; margin: 0 auto; padding: 36px 80px;}
-.con-wrap .banner {width: 100%; margin-bottom: 24px; cursor: url('./img/cursor-img01.png'), pointer;}
+.con-wrap .banner {width: 100%; margin-bottom: 24px; cursor: url('../../../img/cursor-img01.png'), pointer;}
 .con-wrap .banner > img.desktop {width: 100%; display: block;}
 .con-wrap .banner > img.mobile {width: 100%; display: none;}
-.con-wrap .banner:active {cursor: url('./img/cursor-img02.png'), pointer;}
+.con-wrap .banner:active {cursor: url('../../../img/cursor-img02.png'), pointer;}
 
 .con-desc {margin-bottom: 24px;}
 .con-desc > p {font-size: 16px; font-weight: 500; line-height: 160%;}
 .con-desc > p > span {text-decoration: underline; font-weight: 800;}
 
 .con-desc > p > strong {color: #0087ff; font-weight: 700;}
-.con-desc > div {font-size: 16px; font-weight: 700; color: #0087ff; text-decoration: underline; float: right; position: relative; top: -21px; height: 0; cursor: url('./img/cursor-img01.png'), pointer;}
-.con-desc > div:active {cursor: url('./img/cursor-img02.png'), pointer;}
+.con-desc > div {font-size: 16px; font-weight: 700; color: #0087ff; text-decoration: underline; float: right; position: relative; top: -21px; height: 0; cursor: url('../../../img/cursor-img01.png'), pointer;}
+.con-desc > div:active {cursor: url('../../../img/cursor-img02.png'), pointer;}
 
 .ticket-wrap .ticket-con {clear: both; display: inline-block; width: 32.5%; margin: 0 0.29%;  vertical-align: top;}
 .ticket-wrap .ticket-con .ticket-input {display: none; position: absolute; z-index: -1; width: 0; height: 0; opacity: 0;}
-.ticket-wrap .ticket-con .ticket-label {cursor: url('./img/cursor-img01.png'), pointer;}
-.ticket-wrap .ticket-con .ticket-label .ticket-box {text-align: center; cursor: url('./img/cursor-img01.png'), pointer;
-background: url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-img05.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 36px;}
-.ticket-wrap .ticket-con .ticket-label .ticket-box.point {text-align: center; cursor: url('./img/cursor-img01.png'), pointer;
-background: url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-img06.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 36px;}
-.ticket-wrap .ticket-con .ticket-label .ticket-box:active {cursor: url('./img/cursor-img02.png'), pointer;}
+.ticket-wrap .ticket-con .ticket-label {cursor: url('../../../img/cursor-img01.png'), pointer;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box {text-align: center; cursor: url('../../../img/cursor-img01.png'), pointer;
+background: url(../../../img/ticket-bg-line01.png) repeat-y, url(../../../img/ticket-bg-line01.png) repeat-y, url(../../../img/ticket-bg-img05.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 36px;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box.point {text-align: center; cursor: url('../../../img/cursor-img01.png'), pointer;
+background: url(../../../img/ticket-bg-line01.png) repeat-y, url(../../../img/ticket-bg-line01.png) repeat-y, url(../../../img/ticket-bg-img06.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 36px;}
+.ticket-wrap .ticket-con .ticket-label .ticket-box:active {cursor: url('../../../img/cursor-img02.png'), pointer;}
 .ticket-wrap .ticket-con .ticket-label .ticket-box.point .boardingpass {font-size: 12px; font-weight: 700; color: #fff; text-align: center; padding-top: 20px; height: 43px;}
 .ticket-wrap .ticket-con .ticket-label .ticket-box .boardingpass {font-size: 12px; font-weight: 700; color: #222; text-align: center; padding-top: 20px; height: 43px;}
 /*.ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-sub {background: #fff;}*/
@@ -36,8 +36,8 @@ background: url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-line01
 .ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .ticket-info {font-size: 16px; font-weight: 500; color: #222; line-height: 130%; margin-bottom: 16px;}
 .ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .half {display: inline-block; width: 49%; vertical-align: top; letter-spacing: -0.02em;}
 .ticket-wrap .ticket-con .ticket-label .ticket-box .ticket-desc .third {display: inline-block; width: 32%; vertical-align: top;}
-.ticket-wrap .ticket-con .ticket-input:checked ~ .ticket-label .ticket-box {background: url(./img/ticket-bg-line02.png) repeat-y, url(./img/ticket-bg-line02.png) repeat-y, url(./img/ticket-bg-img07.png) repeat-x; background-position: right, left, left top; background-size: 3px, 3px, auto; border-bottom: 3px solid #0087ff; margin-bottom: 34px;}
-.ticket-wrap .ticket-con .ticket-input:checked ~ .ticket-label .ticket-box.point {background: url(./img/ticket-bg-line02.png) repeat-y, url(./img/ticket-bg-line02.png) repeat-y, url(./img/ticket-bg-img08.png) repeat-x; background-position: right, left, left top; background-size: 3px, 3px, auto; border-bottom: 3px solid #0087ff; margin-bottom: 34px;}
+.ticket-wrap .ticket-con .ticket-input:checked ~ .ticket-label .ticket-box {background: url(../../../img/ticket-bg-line02.png) repeat-y, url(../../../img/ticket-bg-line02.png) repeat-y, url(../../../img/ticket-bg-img07.png) repeat-x; background-position: right, left, left top; background-size: 3px, 3px, auto; border-bottom: 3px solid #0087ff; margin-bottom: 34px;}
+.ticket-wrap .ticket-con .ticket-input:checked ~ .ticket-label .ticket-box.point {background: url(../../../img/ticket-bg-line02.png) repeat-y, url(../../../img/ticket-bg-line02.png) repeat-y, url(../../../img/ticket-bg-img08.png) repeat-x; background-position: right, left, left top; background-size: 3px, 3px, auto; border-bottom: 3px solid #0087ff; margin-bottom: 34px;}
 /*.ticket-wrap .ticket-con .ticket-input:checked ~ .ticket-label .ticket-box .ticket-sub {background: #fffadb;}*/
 
 .desc-txt {padding-bottom: 16px;}
@@ -55,10 +55,10 @@ background: url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-line01
 .step > p > span {font-size: 24px; font-weight: 600; margin-bottom: 16px; line-height: 160%; color: #0087ff;}
 .step > ul > li {display: inline-block; margin-right: 15px;}
 
-.ticketing-box {width: 100%; text-align: center; cursor: url('./img/cursor-img01.png'), pointer;
-background: url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-img05.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 16px; padding: 0 30px;}
-.ticketing-box.point {width: 100%; text-align: center; cursor: url('./img/cursor-img01.png'), pointer;
-background: url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-img06.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 16px; padding: 0 30px;}
+.ticketing-box {width: 100%; text-align: center; cursor: url('../../../img/cursor-img01.png'), pointer;
+background: url(../../../img/ticket-bg-line01.png) repeat-y, url(../../../img/ticket-bg-line01.png) repeat-y, url(../../../img/ticket-bg-img05.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 16px; padding: 0 30px;}
+.ticketing-box.point {width: 100%; text-align: center; cursor: url('../../../img/cursor-img01.png'), pointer;
+background: url(../../../img/ticket-bg-line01.png) repeat-y, url(../../../img/ticket-bg-line01.png) repeat-y, url(../../../img/ticket-bg-img06.png) repeat-x; background-position: right, left, left top; background-size: 1px, 1px, auto; border-bottom: 1px solid #000; margin-bottom: 16px; padding: 0 30px;}
 .ticketing-box .boardingpass {font-size: 12px; font-weight: 700; color: #222; text-align: center; padding-top: 20px; height: 43px;}
 .ticketing-box.point .boardingpass {font-size: 12px; font-weight: 700; color: #fff; text-align: center; padding-top: 20px; height: 43px;}
 .ticketing-box .ticketing-tit {font-size: 16px; font-weight: 700; color: #222; text-align: left; padding: 22px 0 20px;}
@@ -85,7 +85,7 @@ background: url(./img/ticket-bg-line01.png) repeat-y, url(./img/ticket-bg-line01
 
 .agree-check {clear: both; margin-bottom: 16px;}
 .agree-check-input {position: absolute; z-index: -1; width: 0; height: 0; opacity: 0;}
-.agree-check-label {user-select: none; margin-bottom: 0; cursor: url('./img/cursor-img01.png'), pointer; vertical-align: middle;}
+.agree-check-label {user-select: none; margin-bottom: 0; cursor: url('../../../img/cursor-img01.png'), pointer; vertical-align: middle;}
 .agree-check-label > svg {margin-right: 8px;}
 .agree-check-label > svg > polyline {fill: none; stroke: #fff; stroke-width: 2px; stroke-miterlimit: 10; stroke-dashoffset: 0; stroke-dasharray: 30;}
 .agree-check-input:checked ~  .agree-check-label > svg > polyline {stroke: #fff; animation: dash 0.5s linear alternate 1;}
